@@ -11808,5 +11808,8 @@ let cards = [
 ];
 
 //1) while chaining array methods print each card that has a rarity value of "common"
-
+let isee = cards
+  .filter((cards) => (cards.rarity = "common"))
+  .filter((cards) => cards.printings.includes("6ED"));
+console.log(isee);
 //2)while chainign array methods, print each card that includes "6ED" in it's printings
